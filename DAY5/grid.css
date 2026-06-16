@@ -1,0 +1,32 @@
+.container{ 
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+}
+.box{border: 2px solid red;
+}
+.aman{
+    border: 2px solid green;
+    background-color: lightgreen;
+    color : white;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    align-items: center;
+    /* grid-column-start:2; */
+    order: ;
+
+}
+.shubham{
+    border: 2px solid green;
+    background-color: rgb(17, 68, 17);
+    color : white;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    align-items: center;
+}
