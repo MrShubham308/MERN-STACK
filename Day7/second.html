@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let students = ["Aman", "Biman", "Chandan", "Dinesh", "Eshan", "Ram"];
+        console.log(students.length);
+        students.push("Shyam");
+        console.log(students.length);
+        console.log(students);
+        students.pop();
+        students.unshift("Shyam");
+        console.log(students);
+        students.shift();
+
+        for(let i = 0; i < students.length; i++) 
+        
+        {
+            console.log("Index " + i + ": " + students[i]);
+        }
+    </script>
+</body>
+</html>

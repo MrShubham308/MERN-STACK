@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let xyz = [11,22,33,44,55, "BIT","Buddha","aman","Shubham"];
+        
+        // start form 2nd index and remove 5 elements
+        let abc = xyz.splice(2,5);
+
+        // start form 3rd index remove 2 elements an add 4 elements
+        xyz.splice(3,2,33,77,21,"BIT");
+
+        // add elemets form the 5th index without removing any element
+        xyz.splice(5,0,"aman","naman", "chaman", "shaman");
+
+        
+
+
+
+
+
+
+
+
+
+
+
+        // let seperate= xyz.slice(2,xyz.length);
+        // console.log(seperate);
+
+
+
+
+        // if you want check whether the element is exist or not in the array then we can use includes() method.
+        // console.log(xyz.includes(33)); // true
+        // console.log(xyz.includes(66)); // false
+    </script>
+</body>
+</html>
