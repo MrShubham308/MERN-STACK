@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Spread Operator
+        const user ={
+            name: "Aman",
+            role: "user",
+            age: 22,
+        };
+        const updatedUser = {
+            ...user,
+            role: "admin",
+            city: "Delhi",
+            age: 23,
+        };
+        console.log(updatedUser);
+        user.name = "Aman Kumar";
+        console.log(user);
+
+        let {name ,course, rollno} = user;
+        console.log(name);
+        name = "Shubham";
+        console.log(name);
+        console.log(user.name);
+    </script>
+</body>
+</html>

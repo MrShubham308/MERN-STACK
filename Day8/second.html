@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ...a rest operator
+        function abc(...a){
+            console.log(a);
+        }
+        let b = [11,22,33,44,55];
+        console.log(b);
+        console.log(...b); //spread operator ...b copies the elements of the array b into individual arguments for the function abc
+
+
+
+        abc(22);
+        abc(11,22);
+        abc(11,22,33);
+    </script>
+</body>
+</html>

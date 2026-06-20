@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let user = {
+            name: "Aman",
+            course: "BCA",
+            rollno: 22, 
+            address: {
+                city: "Gorakhpur",
+                state: "U.P",
+                country: "India"
+            },
+        }
+        console.log(user);
+        let user1 = user
+        // it is passing the refrence
+        user1.name = "Aman Kushwaha";
+        console.log(user);
+        console.log(user1);
+
+        // shallow copy
+        let user2 = {
+            ...user
+        };
+        //problem in shallow copy
+        //inner object is still passed by reference only
+
+        //deep copy
+        let temp = JSON.stringify(user);
+        console.log(temp);
+        let user3 = JSON.parse(temp);
+
+        let user4 = structuredClone(user);
+        user.name = "Rshul srivastava";
+        user.address.city = "Lucknow";
+
+        console.log(user4);
+        console.log(user);
+
+        // Alias Destructuring
+        const {name:Fullname} = user;
+        // console.log(Fullname);
+
+        //default value in destructuring
+        // const {age = 22} = user;
+        const {attendance = false} = user;
+
+        let fees ={
+            name: "Aman",
+            course: "BCA",
+            fees: 50000,
+            paid: 20000,
+        }
+        let student = {
+            ...fees,
+            ...user
+        }
+
+        // Safe access of objects
+        console.log(student)
+
+        console.log(user?.temporary?.city)
+    </script>
+</body>
+</html>
